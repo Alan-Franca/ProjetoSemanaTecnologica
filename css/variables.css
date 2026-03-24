@@ -1,0 +1,19 @@
+:root {
+    --bg-primary: #0a0b16;
+    --bg-secondary: #121528;
+    --bg-tertiary: #1a1e36;
+    
+    --text-primary: #ffffff;
+    --text-secondary: #a0a8be;
+    
+    --accent-cyan: #00f0ff;
+    --accent-magenta: #ff007f;
+    --accent-purple: #8a2be2;
+    
+    --font-main: 'Outfit', sans-serif;
+    
+    --transition-standard: all 0.3s linear;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+}

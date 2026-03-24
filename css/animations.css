@@ -1,0 +1,29 @@
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+.day-card:hover, .speaker-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 240, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.speaker-img-wrapper img {
+    transition: var(--transition-standard);
+}
+
+.speaker-card:hover .speaker-img-wrapper img {
+    transform: scale(1.1);
+}

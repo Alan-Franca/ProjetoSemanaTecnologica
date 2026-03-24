@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-Week | Computação Quântica</title>
+    <meta name="description" content="Semana de Tecnologia da Universidade Cruzeiro do Sul sobre Computação Quântica">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Q-WEEK</div>
+        <nav class="nav-links">
+            <a href="#home">Início</a>
+            <a href="#programacao">Programação</a>
+            <a href="#palestrantes">Palestrantes</a>
+            <a href="#inscricao" class="btn-primary">Inscreva-se</a>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="badge">Universidade Cruzeiro do Sul</span>
+                <h1>O Futuro é <span class="text-gradient">Quântico</span>.</h1>
+                <p>Mergulhe na próxima revolução tecnológica. Palestras, workshops e um hackathon para expandir suas
+                    fronteiras.</p>
+                <div class="hero-actions">
+                    <a href="#inscricao" class="btn-primary">Garantir Vaga</a>
+                    <a href="#programacao" class="btn-secondary">Ver Programação</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/quantum-hero.jpg" alt="Abstração de Computação Quântica" class="floating">
+            </div>
+        </section>
+
+        <section id="programacao" class="schedule">
+            <div class="section-title">
+                <h2>Nossa Programação</h2>
+                <p>Três dias imersivos de conhecimento avançado</p>
+            </div>
+            <div class="timeline">
+                <div class="day-card">
+                    <div class="date-badge">Dia 1 - 10/Mai</div>
+                    <h3>Fundamentos Quânticos</h3>
+                    <ul class="events-list">
+                        <li><span class="time">18:00</span> Abertura Oficial</li>
+                        <li><span class="time">19:30</span> Palestra: O que são Qubits?</li>
+                        <li><span class="time">21:00</span> Dinâmica de Integração</li>
+                    </ul>
+                </div>
+                <div class="day-card">
+                    <div class="date-badge">Dia 2 - 11/Mai</div>
+                    <h3>Algoritmos em Ação</h3>
+                    <ul class="events-list">
+                        <li><span class="time">18:00</span> Workshop: Algoritmos de Shor e Grover</li>
+                        <li><span class="time">20:00</span> Mesa Redonda: Segurança</li>
+                    </ul>
+                </div>
+                <div class="day-card">
+                    <div class="date-badge">Dia 3 - 12/Mai</div>
+                    <h3>Criptografia e Encerramento</h3>
+                    <ul class="events-list">
+                        <li><span class="time">18:00</span> Desafio Hackathon Quântico</li>
+                        <li><span class="time">21:00</span> Premiação e Encerramento</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="palestrantes" class="speakers">
+            <div class="section-title">
+                <h2>Palestrantes Confirmados</h2>
+                <p>Conheça os especialistas que guiarão a nossa jornada</p>
+            </div>
+            <div class="speaker-grid">
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <img src="assets/images/akita-image.jpeg" alt="Fabio Akita">
+                    </div>
+                    <h3>Fabio Akita</h3>
+                    <p>Tech Influencer & Keynote Speaker</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <img src="assets/images/speaker1.jpg" alt="Dra. Alice Silva">
+                    </div>
+                    <h3>Dra. Alice Silva</h3>
+                    <p>Pesquisadora em IA Quântica</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <img src="assets/images/speaker2.jpg" alt="Dr. Roberto Costa">
+                    </div>
+                    <h3>Dr. Roberto Costa</h3>
+                    <p>Engenheiro de Hardware Quântico</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscricao" class="registration">
+            <div class="reg-container">
+                <div class="reg-info">
+                    <h2>Pronto para o salto?</h2>
+                    <p>As vagas são limitadas. Inscreva-se agora e garanta sua participação na semana tecnológica mais
+                        aguardada do ano.</p>
+                </div>
+                <form id="reg-form" class="form">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder="Nome Completo">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder="E-mail Institucional">
+                    </div>
+                    <div class="input-group">
+                        <select id="course" required>
+                            <option value="" disabled selected>Selecione seu curso</option>
+                            <option value="cc">Ciência da Computação</option>
+                            <option value="si">Sistemas de Informação</option>
+                            <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Confirmar Inscrição</button>
+                    <p id="form-success" class="hidden-msg">Inscrição realizada com sucesso!</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Q-WEEK</h2>
+                <p>O futuro processado de forma diferente.</p>
+            </div>
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>contato@qweek.cruzeirodosul.edu.br</p>
+                <p>(11) 99999-9999</p>
+            </div>
+            <div class="footer-social">
+                <h3>Redes</h3>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Q-Week. Universidade Cruzeiro do Sul. Desenvolvido para Atividade de UX/UI.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
